@@ -1,6 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .right{
     width: 75vw;
 }
 .left{
     width: 25vw;
+    padding: 5px;
+}
+.home{
+    padding: 10px;
+}
+.home .logo{
+    padding-left: 11px;
+}
+.home ul li{
+    width:14px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 14px;
 }
