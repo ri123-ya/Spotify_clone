@@ -26,10 +26,10 @@
 .heading {
     display: flex;
     gap: 15px;
-    width: 100%;
+    width:100%;
     padding-top: 14px;
     padding: 23px 14px;
     font-weight: bold;
     align-items: center;
-    font-size: 13px;
+    font-size: 10x;
 }
