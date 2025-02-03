@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+    color: white;
+}
 .right{
     width: 75vw;
 }
@@ -16,7 +20,7 @@
     padding-left: 11px;
 } */
 .home ul li{
-    width:14px;
+    width:22px;
     list-style: none;
     display: flex;
     gap: 15px;
@@ -32,4 +36,37 @@
     font-weight: bold;
     align-items: center;
     font-size: 10x;
+}
+.heading img{
+    width:22px;
+}
+.heading h2{
+    font-size: 18px;
+}
+
+.footer{
+    display:flex;
+    gap:13px;
+    font-size:12px;
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+    color:grey;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.right{
+    margin:11px 0;
+}
+
+.header {
+    justify-content: space-between;
+    background-color: rgb(34 34 34);
+
+}
+.header >*{
+    padding:17px; /*targeting direct child*/
 }
