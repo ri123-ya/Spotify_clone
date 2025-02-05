@@ -70,3 +70,8 @@ body{
 .header >*{
     padding:17px; /*targeting direct child*/
 }
+
+.playlist{
+    padding: 14px;
+    font-size: 13px;
+}
