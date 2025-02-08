@@ -175,6 +175,12 @@ body{
     gap: 20px;
 }
 
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
 .songList {
     height: 544px;
     overflow: auto;
@@ -199,12 +205,12 @@ body{
 }
 .songList .info {
     font-size: 13px;
-    width: 344px;
+    width: 200px;
 }
 
 .info div {
     word-break: break-all;
-}
+} 
 
 .playnow {
     display: flex;
@@ -215,5 +221,5 @@ body{
 .playnow span {
     font-size: 15px;
     width: 64px;
-    padding: 12px;
+    padding: 60px;
 }
