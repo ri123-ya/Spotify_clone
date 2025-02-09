@@ -171,7 +171,7 @@ body{
     width: 90%;
     padding: 12px;
     width: 70vw;
-    min-height: 40px;
+    min-height: 60px;
     gap: 20px;
 }
 
@@ -205,7 +205,7 @@ body{
 }
 .songList .info {
     font-size: 13px;
-    width: 200px;
+    width: 200 px;
 }
 
 .info div {
@@ -222,4 +222,15 @@ body{
     font-size: 15px;
     width: 64px;
     padding: 60px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 98%;
+    background: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 8px;
+    margin: 6px;
+    cursor: pointer;
 }
