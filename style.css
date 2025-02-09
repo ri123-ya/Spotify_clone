@@ -171,16 +171,16 @@ body{
     width: 90%;
     padding: 12px;
     width: 70vw;
-    min-height: 50px;
-    gap: 20px;
+    min-height: 40px;
+    /* gap: 40px; */
 }
 
 .songbuttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 30px;
-    padding-bottom: 20px;
+    /* height: 30px; */
+    /* padding-bottom: 10px;  */
 }
 
 .songList {
@@ -232,7 +232,7 @@ body{
     background: black;
     border-radius: 10px;
     position: absolute;
-    bottom: 4px;
+    bottom: 8px;
     margin: 6px;
     cursor: pointer;
 }
