@@ -171,14 +171,16 @@ body{
     width: 90%;
     padding: 12px;
     width: 70vw;
-    min-height: 60px;
+    min-height: 50px;
     gap: 20px;
 }
 
 .songbuttons {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
+    height: 30px;
+    padding-bottom: 20px;
 }
 
 .songList {
@@ -230,7 +232,31 @@ body{
     background: black;
     border-radius: 10px;
     position: absolute;
-    bottom: 8px;
+    bottom: 4px;
     margin: 6px;
     cursor: pointer;
 }
+
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+ 
