@@ -253,10 +253,24 @@ body{
     cursor: pointer;
 }
 
+.songinfo {
+    color: black;
+    padding: 0 12px;
+    width: 250px;
+}
+
+.songtime {
+    width: 125px;
+    color: black;
+    padding: 0 12px;
+}
+ 
 .abovebar {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     width: 100%;
 }
+
+
  
