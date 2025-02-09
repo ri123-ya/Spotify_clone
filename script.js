@@ -1,4 +1,22 @@
 console.log('Lets write JavaScript');
+let currentSong = new Audio();
+let songs;
+let currFolder;
+
+function secondsToMinutesSeconds(seconds) {
+    if (isNaN(seconds) || seconds < 0) {
+        return "00:00";
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
+
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+}
+ 
 
 async function getSongs(folder) {
     currFolder = folder;
@@ -27,7 +45,7 @@ async function getSongs(folder) {
                                 <div>Singer</div>
                             </div>
                             <div class="playnow">
-                                <span>Play Now</span>
+                                <span>Play Now</   span>
                                 <img class="invert" src="img/play.svg" alt="">
                             </div> </li>`;
     }
@@ -43,4 +61,41 @@ async function getSongs(folder) {
     return songs
 }
 
-main()
+const playMusic = (track, pause = false) => {
+    currentSong.src = `/${currFolder}/` + track
+    if (!pause) {
+        currentSong.play()
+        play.src = "img/pause.svg"
+    }
+    document.querySelector(".songinfo").innerHTML = decodeURI(track)
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
+
+ 
+}
+
+async function main() {
+    play.addEventListener("click", () => {
+        if (currentSong.paused) {
+            currentSong.play()
+            play.src = "img/pause.svg"
+        }
+        else {
+            currentSong.pause()
+            play.src = "img/play.svg"
+        }
+    })
+
+    // Listen for timeupdate event
+    currentSong.addEventListener("timeupdate", () => {
+        document.querySelector(".songtime").innerHTML = `${secondsToMinutesSeconds(currentSong.currentTime)} / ${secondsToMinutesSeconds(currentSong.duration)}`
+        document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%";
+    })
+
+    // Add an event listener to seekbar
+    document.querySelector(".seekbar").addEventListener("click", e => {
+        let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
+        document.querySelector(".circle").style.left = percent + "%";
+        currentSong.currentTime = ((currentSong.duration) * percent) / 100
+    })
+}
+ main()
