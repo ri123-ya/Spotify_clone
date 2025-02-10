@@ -22,9 +22,9 @@ body{
     padding: 5px;
 }
 
-/* .home .logo{
-    padding-left: 11px;
-} */
+.close{
+    display: none;
+}
 .home ul li{
     width:22px;
     list-style: none;
@@ -302,6 +302,9 @@ body{
         right: 31px;
         top: 25px;
         width: 29px;
+    }
+    .close{
+        display: block;
     }
     .right{
         width: 100vw;
