@@ -308,9 +308,15 @@ body{
     }
     .right{
         width: 100vw;
+        margin: 0;
     }
     .playbar{
         width: calc(100vw - 75px); 
+    }
+    .abovebar {
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
     }
     .seekbar {
         width: calc(100vw - 120px);
