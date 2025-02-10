@@ -85,7 +85,7 @@ body{
     padding:17px; /*targeting direct child*/
 }
 
-.playlist{
+.spotifyplaylist{
     padding: 14px;
     font-size: 13px;
 }
@@ -284,13 +284,17 @@ body{
 }
 
 @media (max-width: 900px) {
-    .left{
-        position:absolute ;
-        left: -100%;
-        transition: 3% ;
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
         z-index: 1;
-        width: 333px;  
+        width: 385px;
         background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
     }
 
     .left .close {
@@ -303,7 +307,10 @@ body{
         width: 100vw;
     }
     .playbar{
-        width: 93vw ;
+        width: calc(100vw - 75px); 
+    }
+    .seekbar {
+        width: calc(100vw - 120px);
     }
     .hamburger{
         display: block;
