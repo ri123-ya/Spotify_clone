@@ -283,14 +283,21 @@ body{
     width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .left{
-        background-color: red;
         position:absolute ;
         left: -100%;
         transition: 3% ;
         z-index: 1;
-        width: 233px;  
+        width: 333px;  
+        background-color: black;
+    }
+
+    .left .close {
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
     }
     .right{
         width: 100vw;
